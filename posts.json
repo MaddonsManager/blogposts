@@ -1,0 +1,28 @@
+{
+    "posts": [
+        {
+            "title": "How to optimize World of Warcraft 3.3.5",
+            "folder": "how-to-optimize-wow-3.3.5",
+            "cover_image": "wow.webp",
+            "author": {
+                "name": "Jeff aka Sitoz",
+                "email": "sitoz@test.com"
+            },
+            "tags": ["wow", "guide"],
+            "description": "A guide to optimize World of Warcraft 3.3.5",
+            "date": "2024-12-25"
+        },
+        {
+            "title": "How to install MaddonsManager",
+            "folder": "maddonsmanager",
+            "cover_image": "maddons.png",
+            "author": {
+                "name": "Jeff aka Sitoz",
+                "email": "sitoz@test.com"
+            },
+            "tags": ["maddons", "guide"],
+            "description": "A guide to install MaddonsManager",
+            "date": "2024-12-25"
+        }
+    ]
+}
