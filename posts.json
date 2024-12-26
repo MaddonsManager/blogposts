@@ -1,15 +1,17 @@
 {
     "posts": [
         {
-            "title": "How to optimize World of Warcraft 3.3.5",
-            "folder": "how-to-optimize-wow-3.3.5",
-            "cover_image": "wow.webp",
+            "title": "How to modernize your client 3.3.5",
+            "folder": "modernize-client-3.3.5",
+            "cover_image": "banner.png",
             "author": {
-                "name": "Jeff aka Sitoz",
-                "email": "sitoz@test.com"
+                "avatar": "avatar.bmp",
+                "name": "Marotheit",
+                "email": "Marotheit",
+                "url": "https://github.com/Marotheit"
             },
             "tags": ["wow", "guide"],
-            "description": "A guide to optimize World of Warcraft 3.3.5",
+            "description": "A guide to modernize World of Warcraft 3.3.5",
             "date": "2024-12-25"
         },
         {
@@ -17,8 +19,10 @@
             "folder": "maddonsmanager",
             "cover_image": "maddons.png",
             "author": {
+                "avatar": "banner.png",
                 "name": "Jeff aka Sitoz",
-                "email": "sitoz@test.com"
+                "email": "sitoz@test.com",
+                "url": "https://github.com/PentSec"
             },
             "tags": ["maddons", "guide"],
             "description": "A guide to install MaddonsManager",
