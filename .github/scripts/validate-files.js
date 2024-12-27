@@ -2,9 +2,9 @@ const fs = require('fs')
 const path = require('path')
 
 
-const postsJsonPath = path.resolve(__dirname, '../posts.json')
+const postsJsonPath = path.resolve(__dirname, '../../posts.json')
 
-const blogPostsDir = path.resolve(__dirname, '../blogposts')
+const blogPostsDir = path.resolve(__dirname, '../../blogposts')
 
 try {
     const postsData = JSON.parse(fs.readFileSync(postsJsonPath, 'utf8'))

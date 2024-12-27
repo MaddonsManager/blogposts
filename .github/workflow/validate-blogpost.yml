@@ -25,7 +25,7 @@ jobs:
 
     - name: Validate posts.json Structure
       run: |
-        npx ajv validate -s ./schema/posts.schema.json -d ./posts.json
+        npx ajv validate -s ./.github/schema/posts.schema.json -d ./posts.json
       env:
         CI: true
 
@@ -35,4 +35,4 @@ jobs:
 
     - name: Check Referenced Files
       run: |
-        node ./scripts/validate-files.js
+        node ./.github/scripts/validate-files.js
