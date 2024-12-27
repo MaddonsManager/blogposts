@@ -27,6 +27,20 @@
             "tags": ["maddons", "guide"],
             "description": "A guide to install MaddonsManager",
             "date": "2024-12-25"
+        },
+        {
+            "title": "test",
+            "folder": "test",
+            "cover_image": "banner.png",
+            "author": {
+                "avatar": "avatar.bmp",
+                "name": "Jeff aka Sitoz",
+                "email": "sitoz@test.com",
+                "url": "https://github.com/PentSec"
+            },
+            "tags": ["maddons", "guide"],
+            "description": "A guide to install MaddonsManager",
+            "date": "2024-12-25"
         }
     ]
 }
