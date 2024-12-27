@@ -1,0 +1,38 @@
+name: Validate Blog Posts
+
+on:
+  pull_request:
+    paths:
+      - "posts.json"
+      - "blogpost/**"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set Up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: "20"
+
+    - name: Install Dependencies
+      run: |
+        npm install ajv-cli markdownlint-cli
+
+    - name: Validate posts.json Structure
+      run: |
+        npx ajv validate -s ./schema/posts.schema.json -d ./posts.json
+      env:
+        CI: true
+
+    - name: Validate Markdown Files
+      run: |
+        npx markdownlint-cli "blogpost/**/*.md"
+
+    - name: Check Referenced Files
+      run: |
+        node ./scripts/validate-files.js
